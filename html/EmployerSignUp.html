@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<link rel="stylesheet" href="EmployerSignUp.css" type="text/css" />
+</head>
+
+<body onload="LoadPage()">
+	<header>
+		<img src="logo1.png" alt="Be-Rojgar Logo" id="log">
+		<h1>Be-Rojgar - Job Seeking Site</h1>
+		<h2>Employee SignUp</h2>
+	  </header>
+	<div id="body_struct">
+	
+		<div id="employer" style="height:520px;">
+			
+			<div id="joinus_heading">
+				<div style="float: left; width: 98%">New Client Registration</div>
+				<div style="float: left; width: 1%">
+					<a href="employer.login.php" style="text-decoration:none; color:#FF0000;">&bull;</a>
+				</div>
+			</div id="joinus_heading">
+
+			<div id="ejoin">
+				<div><br /><br />
+				
+				<!-- Start of Form Employer Join Us Div -->
+				<form method="post" action="employer.joinus.register.php" onclick="return EmpValidate()" name="form_empjoinus" >
+					
+					<!-- Start of Username Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Username&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right"><input id="textbox" type="text" name="emp_user_name" placeholder="Username" /></div>
+					</div>
+					<!-- End of Username Div -->
+					
+					<!-- Start of Email Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							Email-Id&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right"><input id="textbox" type="text" name="emp_email" placeholder="Email-Id"/></div>
+					</div><br /><br />
+					<!-- End of Email Div -->
+						
+					<!-- Start of Password Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Password&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right"><input id="textbox" type="password" name="emp_pass" placeholder="Password" /></div>
+					</div id="left_part">
+					<!-- End of Password Div -->
+					
+					<!-- Start of Confirm Password Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							Confirm Password&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="password" name="emp_repass" placeholder="Confirm Password" />
+						</div>
+					</div id="right_part"><br /><br />
+					<!-- End of Confirm Password Div -->
+					
+					<!-- Start of Company Name Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Company Name&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_cmpname" placeholder="Name of Company" />
+						</div>
+					</div id="left_part">
+					<!-- End of Company Name Div -->
+					
+					<!-- Start of Company Type Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							Company Type&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input type="radio" name="emp_cmptype" value="Company" />Company
+							<input type="radio" name="emp_cmptype" value="Consultant" />Consultant
+						</div>
+					</div id="right_part"><br /><br />
+					<!-- End of Company Type Div -->
+					
+					<!-- Start of Industry Type Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Industry Type&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<select class="dropdownlist" name="emp_industry_type">
+									<option value="-1">Select</option>
+									<option value="0">Accounting / Finance</option>
+									<option value="1">Advertising / PR / MR / Event Management</option>
+									<option value="2">Agriculture / Dairy</option>
+									<option value="3">Animation / Gaming</option>
+									<option value="4">Architecture / Interior Design</option>
+									<option value="5">Automobile / Auto Anciliary / Auto Components</option>
+									<option value="6">Aviation / Aerospace Firms</option>
+									<option value="7">Banking / Financial Services / Broking</option>
+									<option value="8">BPO / Call Centre / ITES</option>
+									<option value="9">Brewery / Distillery</option>
+									<option value="10">Ceramics / Sanitary ware</option>
+									<option value="11">Chemicals / PetroChemical / Plastic / Rubber</option>
+									<option value="12">Construction / Engineering / Cement / Metals</option>
+									<option value="13">Consumer Electronics / Appliances / Durables</option>
+									<option value="14">Courier / Transportation / Freight / Warehousing</option>
+									<option value="15">Education / Teaching / Training</option>
+									<option value="16">Electricals / Switchgears</option>
+									<option value="17">Export / Import</option>
+									<option value="18">Facility Management</option>
+									<option value="19">Fertilizers / Pesticides</option>
+									<option value="20">FMCG / Foods / Beverage</option>
+									<option value="21">Food Processing</option>
+									<option value="22">Fresher / Trainee / Entry Level</option>
+									<option value="23">Gems / Jewellery</option>
+									<option value="24">Glass / Glassware</option>
+									<option value="25">Government / Defence</option>
+									<option value="26">Heat Ventilation / Air Conditioning</option>
+									<option value="27">Industrial Products / Heavy Machinery</option>
+									<option value="28">Insurance</option>
+									<option value="29">Iron and Steel</option>
+									<option value="30">IT-Hardware &amp; Networking</option>
+									<option value="31">IT-Software / Software Services</option>
+									<option value="32">KPO / Research / Analytics</option>
+									<option value="33">Legal</option>
+									<option value="34">Media / Entertainment / Internet</option>
+									<option value="35">Internet / Ecommerce</option>
+									<option value="36">Medical / Healthcare / Hospitals</option>
+									<option value="37">Mining / Quarrying</option>
+									<option value="38">NGO / Social Services / Regulators / Industry Associations</option>
+									<option value="39">Office Equipment / Automation</option>
+									<option value="40">Oil and Gas / Energy / Power / Infrastructure</option>
+									<option value="41">Pulp and Paper</option>
+									<option value="42">Pharma / Biotech / Clinical Research</option>
+									<option value="43">Printing / Packaging</option>
+									<option value="44">Publishing</option>
+									<option value="45">Real Estate / Property</option>
+									<option value="46">Recruitment / Staffing</option>
+									<option value="47">Retail / Wholesale</option>
+									<option value="48">Security / Law Enforcement</option>
+									<option value="49">Semiconductors / Electronics</option>
+									<option value="50">Shipping / Marine</option>
+									<option value="51">Strategy / Management Consulting Firms</option>
+									<option value="52">Telcom / ISP</option>
+									<option value="53">Textiles / Garments / Accessories</option>
+									<option value="54">Travel / Hotels / Restaurants / Airlines / Railways</option>
+									<option value="55">Tyres</option>
+									<option value="56">Water Treatment / Waste Management</option>
+									<option value="57">Wellness / Fitness / Sports</option>
+									<option value="58">Other</option>
+								</select>
+						</div>
+					</div id="left_part">
+					<!-- End of Industry Type Div -->
+					
+					<!-- Start of Gender Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Gender&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input type="radio" name="emp_gender" value="Male" />Male
+							<input type="radio" name="emp_gender" value="Female" />Female
+						</div>
+					</div><br /><br />
+					<!-- End of Gender Div -->
+					
+					<!-- Start of Address Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Address&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<textarea rows="5" cols="50" id="textbox" name="emp_add" style="width: 62%"></textarea>
+						</div>
+					</div id="left_part">
+					<!-- End of Address Div -->
+					
+					<!-- Start of Capta Div
+					<div id="right_part">
+						<div  class="div_left">
+							Captcha Code&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<div>
+								<img src="captcha.php" />
+							</div><br />
+							<div>
+								<input id="textbox" type="text" name="emp_captcha" placeholder="Enter Captcha Value" /></div>
+								<input id="textbox" type="hidden" name="emp_hidden_captcha" value="<?php echo $_SESSION['captcha'] ?>" />
+						</div> -->
+					</div id="right_part"><br /><br /><br /><br /><br />
+					<!-- End of Capta Div -->
+					
+					<!-- Start of City Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							City&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_city" placeholder="Your City Name" />
+						</div>
+					</div id="left_part">
+					<!-- End of City Div -->
+					
+					<!-- Start of State Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							State&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_state" placeholder="Your State Name" />
+						</div>
+					</div id="right_part"><br /><br />
+					<!-- End of State Div -->
+					
+					<!-- Start of Country Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Country&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_country" placeholder="Your Country Name" />
+						</div>
+					</div id="left_part">
+					<!-- End of Country Div -->
+					
+					<!-- Start of Pin-Code Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							Pin-Code&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_pincode" placeholder="Your Area Pin-Code" />
+						</div>
+					</div id="right_part"><br /><br />
+					<!-- End of Pin-Code Div -->
+					
+					<!-- Start of Contact Number Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							Contact Number&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<!--<input id="textbox" type="text" name="emp_phno_ext" placeholder="Ext." style="width:15%"/>-->
+							<input id="textbox" type="text" name="emp_phno" placeholder="Your Contact Number" />
+						</div>
+					</div id="left_part">
+					<!-- End of Contact Number Div -->
+					
+					<!-- Start of Contact Person Div -->
+					<div id="right_part">
+						<div  class="div_left">
+							Contact Person&nbsp;*
+						</div>
+						<div  class="div_center"><b>:</b></div>
+						<div  class="div_right">
+							<input id="textbox" type="text" name="emp_name" placeholder="Contact Person Name" />
+						</div>
+					</div id="right_part"><br /><br />
+					<!-- End of Contact Person Div -->
+					
+					<!-- Start of Agreement Div -->
+					<div id="left_part">
+						<div  class="div_left">
+							<input type="checkbox" name="emp_agree" onclick="LoadPage()"/>
+						</div>
+						<div  class="div_right">
+							I agree on <a href="index.php" style="text-decoration:none; color:#0000FF">Terms &amp; Conditions</a>
+							&nbsp;*
+						</div>
+					</div id="left_part"><br /><br /><br />
+					<!-- End of Agreement Div -->
+					
+					<!-- Start of Register Me Button Div -->
+					<div id="register">
+						<input type="submit" value="Register Me" id="button" name="emp_btn_register" onclick="EmpValidate()"
+								style="background-color:#C1D5E0; color:#222f50; margin-left: 42.5%; width:15%;"/>
+					</div>
+					<!-- End of Register Me Button Div -->
+				
+					<!-- Start of hidden fields -->
+					<div>
+						<input type="hidden" value="<?php echo $query_run_num_username; ?>" name="emp_hddn_username" /> 
+					</div>
+					<!-- End of hidden fields -->
+				
+				</form>
+				<!-- End of the form Employer Join Us Div -->
+				
+				</div>
+				<!-- End of Details Div -->
+		
+			</div id="ejoin">
+			<!-- End of Employer Join Us Div -->		
+	
+		
+		</div id="employer">
+		<!-- End of Employer Div -->
+	
+	</div id="body_struct">
+	<!-- End of Body Struct Div -->
+
+	<footer>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="Jobs.html">Jobs</a></li>
+      <li><a href="#">Candidates</a></li>
+      <li><a href="#">Employers</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="About Us.html">Contact Us</a></li>
+    </ul>
+<br>
+  <div class="social-media-icons">
+      <a href="https://www.facebook.com/profile.php?id=100094466925137"><i class="fab fa-facebook"></i>Facebook</a>
+      <a href="https://twitter.com/Be-Rojgar=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+        <i class="fab fa-twitter"></i>Follow @Be-Rojgar</a>
+      
+  </div>
+  <p class="copyright">&copy; 2023 Be-Rojgar. All rights reserved.</p>
+  </footer>
+</body>
+
+
+</html>

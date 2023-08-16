@@ -1,0 +1,212 @@
+/* Reset default margin and padding */
+/* body, h1, h2,h4, h5, h6, p, blockquote, pre, ul, ol, li, dl, dd, dt, figure, table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+/* Apply a basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  color: #333;
+  line-height: 1.6;
+    background-image:url("bg.jpeg");
+    background-size: 150% 160%;
+    background-repeat: no-repeat;
+    margin:0px;
+  
+}
+
+#log {
+  width:70px;
+  height:70px;
+  margin-left: 440px;
+  margin-right:20px;
+  float: left;
+}
+header {
+
+  background-color: rgba(0, 0, 0, 0.308);
+  color: white;
+  padding: 30px;
+  text-align: left;
+  margin-left:0px;
+
+}
+h2{
+  padding-left:600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire page */
+#body_struct {
+  margin: 20px auto;
+  width: 70%;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Heading for the registration form */
+#joinus_heading {
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#joinus_heading > div {
+  float: left;
+}
+
+#joinus_heading > div:nth-child(1) {
+  width: 98%;
+}
+
+#joinus_heading > div:nth-child(2) {
+  width: 1%;
+}
+
+#joinus_heading a {
+  text-decoration: none;
+  color: #FF0000;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+.div_left {
+  float: left;
+  width: 25%;
+  font-weight: bold;
+}
+
+.div_center {
+  float: left;
+  width: 2%;
+}
+
+.div_right {
+  float: left;
+  width: 73%;
+}
+
+#textbox {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.dropdownlist {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+/* Styling for radio buttons and checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Button styling */
+#register {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#button {
+  background-color: #C1D5E0;
+  color: #222f50;
+  padding: 10px 20px;
+ 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the Terms & Conditions link */
+#left_part a {
+  text-decoration: none;
+  color: #0000FF;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  #joinus_heading > div:nth-child(1) {
+      width: 100%;
+  }
+
+  #joinus_heading > div:nth-child(2) {
+      display: none;
+  }
+}
+
+/* Additional styling for specific form elements */
+#ejoin {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.308);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+
+
+}
+
+ul li a {
+  color: #fff;
+  margin:5px;
+  text-decoration: none;
+}
+.social-media-icons a{
+color:white;
+margin-right:10px;
+}
+
+.login{
+color:rgba(30, 0, 255, 0.796);
+}
+

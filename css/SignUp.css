@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    background-image:url("bg.jpeg");
+    background-size: 180% 200%;
+    background-repeat: no-repeat;
+    margin:0px;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.308);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  h3{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+
+
+  /* Form container styling */
+.table {
+  max-width: 1000%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 7rem;
+}
+
+
+/* Error message styling */
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input field styling */
+.input_textbox {
+  width: 150%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Select field styling */
+#membership_selection {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Button styling */
+.btnRegister {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.btnRegister:hover {
+  background-color: #0056b3;
+}
+
+/* Center align text */
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+  section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #ffffffdc;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  p {
+    text-align: center;
+  }
+ 
+  footer {
+    background-color: rgba(0, 0, 0, 0.308);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+  
+  }
+  
+  ul li a {
+    color: #fff;
+    margin:5px;
+    text-decoration: none;
+  }
+.social-media-icons a{
+  color:white;
+  margin-right:10px;
+}
+
+.login{
+  color:rgba(30, 0, 255, 0.796);
+}
